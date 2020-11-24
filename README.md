@@ -3,7 +3,7 @@ An Informative workshop on Beginner Physical Design using Open-source EDA tools 
 ## Contents :
 - Introduction to RISC-V architecture design specification
 
-- Day 1: SoC Design and familiarity to open source eda tools
+- Day 1: SoC Design and familiarity to open source EDA tools
 
 - Day 2: Chip floorplan and Introduction to Library Cells
 
@@ -52,7 +52,7 @@ git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vs
 line for img 1
 As we can see In the image area is 1542024 micron.
 After this task, next lab task is to get introduced with 'picorv32' module in qlow .
-### Commands used to to this tasks are as:
+### Commands used:
 - cd vsdflow 
 - mkdir my_picorv32 
 - cd my_picorv32 mkdir source synthesis layout 
@@ -135,7 +135,7 @@ As we can see on image above, the area of the layout is '812062.19 microns.'
 
 
 ## Day 3:
-- Spice deck creation for CMOS inverter and  simulation using ngspice and magic tool
+- Spice deck creation for CMOS Inverter and  Simulation using ngspice and magic tool
 - Euler’s Path and stick diagram for layout 
 - 16 mask process for CMOS fabrication
 
@@ -156,15 +156,15 @@ As we can see on image above, the area of the layout is '812062.19 microns.'
   - N-Well and P-Well formation
   - Formation of ‘gate'
   - Lightly doped drain(LDD) formation
-  - Source and drain formation
-  - Steps to form contacts and interconnects(local)
+  - Source and Drain formation
+  - Steps to form contacts and Interconnects(local)
   - Higher level metal formation
    
 ### commands used:
   - git clone https://github.com/kunalg123/ngspice_labs.git  # to clone ngspice_labs 
   - cd ngspice_labs
   - cat inv.spice
-  line for spice deck of inverter
+  line for spice deck of Inverter
 ### commands used for simulation of above spice netlist
   - cd ngspice_labs
   - ngspice inv.spice
@@ -172,7 +172,7 @@ As we can see on image above, the area of the layout is '812062.19 microns.'
   - run
   - setplot dc1
   - plot out in
-  line for output waveform for vm calculation
+  line for output waveform for Vm calculation
   
   to make some modification in the spice netlist to observe changes in Vm of CMOS
   - leafpad inv.spice   # this will open up editor window 
@@ -234,7 +234,7 @@ images of setup and hold
   ## Post Route Sta log
   img 33
    we can see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
-  ## SPEf representation :
+  ## SPEF representation :
    spef img.
   
    
