@@ -19,10 +19,10 @@ The learning platform is divided in two sections - 1. Learners corners, which gi
                                                    2. Assessments - which gives access to multiple question based on learning .
                                                    
 - Introduction to RISC V SOC architecture - packeage, chip/ die specifications like pads, core(picorv32)
-- Introduction to The Raven Chip - Raven soc, I/O's, Macros,IP's.
-- preparation for qflow and synthesis 
+- Introduction to The Raven Chip - Raven SoC, I/O's, Macros,IP's.
+- Preparation for qflow and synthesis 
   RISC-V ISA Introduction :
-  Very well presentation of the conversion of the high level language code to machine code using complier and assembler with the help of pictorial depiction.
+  Very well Presentation of the conversion of the high level language code to machine code using complier and assembler with the help of pictorial depiction.
   RIS-V based SoC is introduced -Raven and picoSoC
   Implementation of the RISC-V can be done by RTL coding using HDL's( Verilog,VHDL) and then its physical implentation can be done using backend of ASIC flow( RTL to GDSII).
 ## EDA tools used in the deisgn flow:
@@ -36,8 +36,8 @@ The learning platform is divided in two sections - 1. Learners corners, which gi
 - virtualbox - to get linux environment on windows
 
 ### 
-git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vsdflow repo from github, vsdflow contains all the required dirctories required for the design flow
-- commands used to use this vsdflow repo are as:
+git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vsdflow repo from github, vsdflow contains all the required dirctories for the design flow
+### Commands used to use this vsdflow repo are as:
 - cd vsdflow
 - ./vsdflow spi_slave_design_details.csv
 - ls -ltr outdir_spi_slave/
@@ -50,25 +50,25 @@ git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vs
 - after these two steps two windows gets open - one for "layout1" and one for "tkcon" 
 - to find the area of the layout, type "box" in the tkcon window.
 line for img 1
-As we can see In the image area is 1542024 micron.
-After this task, next lab task is to get introduced with 'picorv32' module in qlow .
+#### As we can see In the image area is 1542024 micron.
+#### After this task, next lab task is to get introduced with 'picorv32' module in qlow .
 ### Commands used:
 - cd vsdflow 
 - mkdir my_picorv32 
 - cd my_picorv32 mkdir source synthesis layout 
 - cp ~/vsdflow/verilog/picorv32.v source/. 
 - qflow gui &
-after this gui window gets open, where we need to do some settings in qflow manager to run the synthesis and other flow properly. 
+#### after this gui window gets open, where we need to do some settings in qflow manager to run the synthesis and other flow properly. 
 ### Steps are as:
 - Technology = osu018
 - Verilog source file : picorv32.v
 - Verilog module : picorv32
 - Click set stop button on the setting window in qlow manager
 - Click on the run button adjacent to preparation and synthesis 
-After successful run of the synthesis, we can see the log file by clicking on the okay button at synthesis stage.
+#### After successful run of the synthesis, we can see the log file by clicking on the okay button at synthesis stage.
 line for img 2 syn
-During step task is to calculate the % ratio of DFF/logic cells
-And the answer is : in between 12-13.99% as per the option given in the MCQ during assessment 
+#### During step task is to calculate the % ratio of DFF/logic cells
+#### And the answer is : in between 12-13.99% as per the option given in the MCQ during assessment 
 
 ## Day 2:
 - Chip floor planning 
@@ -76,6 +76,7 @@ And the answer is : in between 12-13.99% as per the option given in the MCQ duri
 - Cell design characterization flows
 - General timing characterization parameters 
 ### Chip Floorplaning :
+
  Topics covered in this part of day 2 of workshop are :
 - Definition of width and height of core and die .
 - Utilization factor and aspect ratio.
@@ -83,22 +84,26 @@ And the answer is : in between 12-13.99% as per the option given in the MCQ duri
 - Concept of decoupling capacitor and its usage in providing required voltage to cells for their proper functioning and to keep chip functionality proper.
 - Power planning of the chip 
 - Pin placement and logical cell placement blockage 
+
 ### Placement :
 During this stage following are done as :
 - Netlist binding with the initial place design using cell library that contains different flavours of a cell 
 - Optimization of placement using estimated wire length and capacitance since routing has not done yet 
 - After this step timing analysis is done with ideal clock since CTS has not done till this stage 
+
 ### Cell Design :
 - It consists of three parts 
 - Inputs - PDKs (Process design kits), DRC & LVS rules, SPICE models, library & user-defined specs.
 - Design Steps Design steps - Circuit Design, Layout Design, Characterization. 
 - Outputs -CDL (Circuit Description Language), GDSII, LEF, extracted Spice netlist (.cir), timing, noise, power.libs, function.
+
 ### Timing definition 
 - Defintion of threshold voltage of a cell and its propagation delay is covered and some tasks related to rise time, fall time, threshold voltage calculation are also done .
 - Important parameters of timing characterization are as :
 - Rise Delay: Time taken for waveform to rise from 20% to 80% of VDD.
 - Fall Delay: Time taken for waveform to fall from 80% to 20% of VDD.
 - Propagation Delay: Measured between 50% of Input transition to 50% of Output transition.
+
 ### Commands used:
 - cd vsdflow
 - mkdir my_picorv32                    # to  create directory of  my_picorv32 module
@@ -106,7 +111,7 @@ During this stage following are done as :
 - mkdir source synthesis layout   # to  create subdirectory source synthesis layout within my_picorv32 
 - cp ~/vsdflow/verilog/picorv32.v source/. # to copy picorv32.v file into source directory
 - qflow gui & 
-after running  above commands, gui window of qflow gets open where we need to change some settings before running placement  like :
+#### after running  above commands, gui window of qflow gets open where we need to change some settings before running placement  like :
 - Select technode osu018
 - Select verilog module picorv32
 - Set stop
@@ -116,9 +121,9 @@ after running  above commands, gui window of qflow gets open where we need to ch
 - Arrange Pins: Auto Group and apply
 - Arrange Pins: New Group and create my_pin_grouping for resetn and clk pins. Check only left box.
 line for placement setting img
-After doing these settings, click on run to start placement which is shown as 
+#### After doing these settings, click on run to start placement which is shown as 
 placement images
-Now to check the layout area of the above design following commands are used :
+#### Now to check the layout area of the above design following commands are used :
 - cd
 - cd vsdflow/my_picorv32
 - qflow display picorv32 &
@@ -128,10 +133,10 @@ Now to check the layout area of the above design following commands are used :
 - Take cursor to top right
 - Right mouse click
 - Press Shift+i
-This will select the whole layout Now in tkcon window, type below command
+#### This will select the whole layout Now in tkcon window, type below command
 - Box
 layout image after placement stage
-As we can see on image above, the area of the layout is '812062.19 microns.'
+#### As we can see on image above, the area of the layout is '812062.19 microns.'
 
 
 ## Day 3:
@@ -165,6 +170,7 @@ As we can see on image above, the area of the layout is '812062.19 microns.'
   - cd ngspice_labs
   - cat inv.spice
   line for spice deck of Inverter
+
 ### commands used for simulation of above spice netlist
   - cd ngspice_labs
   - ngspice inv.spice
@@ -174,15 +180,17 @@ As we can see on image above, the area of the layout is '812062.19 microns.'
   - plot out in
   line for output waveform for Vm calculation
   
-  to make some modification in the spice netlist to observe changes in Vm of CMOS
+####  to make some modification in the spice netlist to observe changes in Vm of CMOS
   - leafpad inv.spice   # this will open up editor window 
   line for next comparision waveform
+ 
  ### Pre layout transient analysis
     1. spice netlist
     2. commands used to run transien analysis
     3. outwaveform
     4. timing defintion 
     copy the timing diagram and then netlis and then output waveform transient netlist here 13a and 13
+
 ###  Post layout analysis
    - cd ngspice_labs
    - magic -T min2.tech  # to open magic layout window and tkcon window
@@ -197,10 +205,13 @@ As we can see on image above, the area of the layout is '812062.19 microns.'
  
 ### Delay Table with different drive strength 
   delay table line
+
 ### CTS 
 images of cts cts 1234 crosstalk
+
 ### Setup and Hold with real clock
 images of setup and hold
+
 ### Commands used for prelayout sta analysis with real clock :
   - /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib  # .lib path 
   - cd vsdflow/my_picorv32
@@ -222,18 +233,20 @@ images of setup and hold
   - DRC     - Rules related to metal width, metal spacing, pitch, via sizing, via spacing 
   - Parasitic Extraction - Representation of R and C parasitics in form of SPEF file.
   - Pre and Post routing STA analysis
-  ### Routing in Progress
+
+### Routing in Progress
   img route 1
-  ### Routing Completion Report
+### Routing Completion Report
   img routing report
-  ##  Sucessful Routing
+ ##  Sucessful Routing
   img route 2 
   image 3
   ## Pre Route Sta log
   img32
   ## Post Route Sta log
   img 33
-   we can see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
+ ####  we can see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
+  
   ## SPEF representation :
    spef img.
   
