@@ -15,16 +15,16 @@ An informative workshop on Beginner Physical Design using Open-source EDA tools 
 
 ## Day 1:
 Day 1 workshop is organized to give introduction about the design on web based linux virtual machine and introduction of EDA tools used at various stages of design flow.  
-The learning platform is divided in two sections - 1. Learners corners, which gives labs instances to perform various tasks related t odesign flow and - 2. Assessments - which gives access to multiple question based on learning .
-Report section is also there in the assessments secion to get feedback about the day 1 completion in the form of report .
+The learning platform is divided in two sections - 1. Learners corners, which gives labs instances to perform various tasks related to design flow 
+                                                   2. Assessments - which gives access to multiple question based on learning .
 ### Topics covered in day 1:
 - Introduction to RISC V SOC architecture - packeage, chip/ die specifications like pads, core(picorv32)
 - Introduction to The Raven Chip - Raven soc, I/O's, Macros,IP's.
 - preparation for qflow and synthesis 
-RISC-V ISA Introduction :
-Very well presentation of the conversion of the high level language code to machine code using complier and assembler with the help of pictorial depiction.
-RIS-V based SoC is introduced -Raven and picoSoC
-Implementation of the RISC-V can be done by RTL coding using HDL's( Verilog,VHDL) and then its physical implentation can be done using backend of ASIC flow( RTL to GDSII).
+  RISC-V ISA Introduction :
+  Very well presentation of the conversion of the high level language code to machine code using complier and assembler with the help of pictorial depiction.
+  RIS-V based SoC is introduced -Raven and picoSoC
+  Implementation of the RISC-V can be done by RTL coding using HDL's( Verilog,VHDL) and then its physical implentation can be done using backend of ASIC flow( RTL to GDSII).
 ## EDA tools used in the deisgn flow:
 - Yosys     - for synthesis
 - Graywolf  - for placement
@@ -49,3 +49,4 @@ git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vs
 - qflow display spi_slave
 - after these two steps two windows gets open - one for "layout1" and one for "tkcon" 
 - to find the area of the layout, type "box" in the tkcon window.
+
