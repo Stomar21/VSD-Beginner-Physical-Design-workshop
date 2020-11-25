@@ -266,6 +266,7 @@ During this stage following are done as :
   - DRC     - Rules related to metal width, metal spacing, pitch, via sizing, via spacing 
   - Parasitic Extraction - Representation of R and C parasitics in form of SPEF file.
   - Pre and Post routing STA analysis
+  
  ![maze](https://user-images.githubusercontent.com/73484928/100149873-d233a600-2ec4-11eb-944b-4cf3b72f19c6.png)
   
   ### MAZE Routing 
