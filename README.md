@@ -222,23 +222,22 @@ During this stage following are done as :
  
 ### Delay Table with different drive strength 
 ![delay table](https://user-images.githubusercontent.com/73484928/100149824-c9db6b00-2ec4-11eb-8de1-c949595ecb97.png)
+
 ### CTS 
 ![cts1](https://user-images.githubusercontent.com/73484928/100149900-d65fc380-2ec4-11eb-8a2c-42874ec83131.png)
 
-![cts2](https://user-images.githubusercontent.com/73484928/100149902-d65fc380-2ec4-11eb-997b-0923c1945324.png)
 ## H tree CTS
-
-![cts3](https://user-images.githubusercontent.com/73484928/100149904-d6f85a00-2ec4-11eb-801b-cfc6d39ca37a.png)
+![cts2](https://user-images.githubusercontent.com/73484928/100149902-d65fc380-2ec4-11eb-997b-0923c1945324.png)
 
 ## CTS with Buffer
-
-![crosstalk](https://user-images.githubusercontent.com/73484928/100149897-d5c72d00-2ec4-11eb-9093-3a716e54b893.png)
+![cts3](https://user-images.githubusercontent.com/73484928/100149904-d6f85a00-2ec4-11eb-801b-cfc6d39ca37a.png)
 
 ## CTS with Crosstalk
+![crosstalk](https://user-images.githubusercontent.com/73484928/100149897-d5c72d00-2ec4-11eb-9093-3a716e54b893.png)
 
-![cts4](https://user-images.githubusercontent.com/73484928/100149909-d790f080-2ec4-11eb-9318-a27d7ca8c13b.png)
 
 ## Shielding to prevent Crosstalk
+![cts4](https://user-images.githubusercontent.com/73484928/100149909-d790f080-2ec4-11eb-9318-a27d7ca8c13b.png)
 
 ### Setup and Hold with real clock
 
@@ -267,34 +266,31 @@ During this stage following are done as :
   - Parasitic Extraction - Representation of R and C parasitics in form of SPEF file.
   - Pre and Post routing STA analysis
   
+ ### MAZE Routing  
  ![maze](https://user-images.githubusercontent.com/73484928/100149873-d233a600-2ec4-11eb-944b-4cf3b72f19c6.png)
   
-  ### MAZE Routing 
-  
+ ### Routing in Progress 
  ![rout1](https://user-images.githubusercontent.com/73484928/100149881-d364d300-2ec4-11eb-8040-9a0515a25f72.png)
   
-  ### Routing in Progress
- 
+
+ ### Routing Completion Report
  ![routing result](https://user-images.githubusercontent.com/73484928/100149890-d4960000-2ec4-11eb-84f0-0ce3bf711486.png)
-   ### Routing Completion Report
+ 
+ ###  Sucessful Routing 
+ ![rout2](https://user-images.githubusercontent.com/73484928/100149885-d3fd6980-2ec4-11eb-838a-9248c12e6572.png)
    
-  ![rout2](https://user-images.githubusercontent.com/73484928/100149885-d3fd6980-2ec4-11eb-838a-9248c12e6572.png)
    
-   ###  Sucessful Routing
+ ### Pre Route Sta log
+ ![pic32](https://user-images.githubusercontent.com/73484928/100149876-d2cc3c80-2ec4-11eb-8032-675b7cff90e5.PNG)
    
-   ![pic32](https://user-images.githubusercontent.com/73484928/100149876-d2cc3c80-2ec4-11eb-8032-675b7cff90e5.PNG)
-   
-   ### Pre Route Sta log
-   
-   ![pic33](https://user-images.githubusercontent.com/73484928/100149878-d364d300-2ec4-11eb-8236-be58437b3e67.PNG)
+ ### Post Route Sta log
+ ![pic33](https://user-images.githubusercontent.com/73484928/100149878-d364d300-2ec4-11eb-8236-be58437b3e67.PNG)
   
-   ### Post Route Sta log
+ ####  we can see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
   
-   ####  we can see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
-  
-   ## SPEF representation :
+ ## SPEF representation :
    
-   ![timing def](https://user-images.githubusercontent.com/73484928/100149895-d5c72d00-2ec4-11eb-85e4-28e3dc801762.PNG)
+ ![timing def](https://user-images.githubusercontent.com/73484928/100149895-d5c72d00-2ec4-11eb-85e4-28e3dc801762.PNG)
   
    
    
