@@ -1,5 +1,5 @@
 # VSD-Beginner-Physical-Design-workshop
-An Informative workshop on Beginner Physical Design using Open-source EDA tools organized by VSD(VLSI system Design) Corp. It provides an hands-on experience to understand ASIC implementation steps from RTL to GDSII using open source EDA tools and tsmc 180nm process design kit. The workshop is organized in a very lucrative fashion to give a complete understanding of  SoC design flow from device physics point of view to real time implementation. The course structure is designed with day by day content in a progressive way of understanding and learning .
+An Informative workshop on Beginner Physical Design using Open-source EDA tools organized by VSD(VLSI system Design) Corp. It provides an hands-on experience to understand ASIC implementation steps from RTL to GDSII using open source EDA tools and tsmc 180nm process design kit. The workshop was organized in a very lucrative fashion to give a complete understanding of  SoC design flow from device physics point of view to real time implementation. The course structure is designed with day by day content in a progressive way of understanding and learning .
 ## Contents :
 - Introduction to RISC-V architecture design specification
 
@@ -14,7 +14,7 @@ An Informative workshop on Beginner Physical Design using Open-source EDA tools 
 - Day 5: Routing and SPEF Extraction
 
 ## Day 1:
-Day 1 workshop is organized to give introduction about the design on web based linux virtual machine and introduction of EDA tools used at various stages of design flow.  
+Day 1 workshop was organized to give introduction about the design on web based linux virtual machine and introduction of EDA tools used at various stages of design flow.  
 The learning platform is divided in two sections - 1. Learners corners, which gives labs instances to perform various tasks related to design flow 
                                                    2. Assessments - which gives access to multiple question based on learning .
                                                    
@@ -36,7 +36,7 @@ The learning platform is divided in two sections - 1. Learners corners, which gi
 - virtualbox - to get linux environment on windows
 
 ### 
-git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vsdflow repo from github, vsdflow contains all the required dirctories for the design flow
+git clone https://github.com/kunalg123/vsdflow.git  this was done to clone the vsdflow repo from github, vsdflow contains all the required dirctories for the design flow
 ### Commands used to use this vsdflow repo are as:
 - cd vsdflow
 - ./vsdflow spi_slave_design_details.csv
@@ -65,7 +65,7 @@ git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vs
 - Verilog module : picorv32
 - Click set stop button on the setting window in qlow manager
 - Click on the run button adjacent to preparation and synthesis 
-#### After successful run of the synthesis, we can see the log file by clicking on the okay button at synthesis stage.
+#### After successful run of the synthesis, we could see the log file by clicking on the okay button at synthesis stage.
 ![img2](https://user-images.githubusercontent.com/73484928/100149833-cba52e80-2ec4-11eb-9f69-c4def72394ee.png)
 #### During step task is to calculate the % ratio of DFF/logic cells
 #### And the answer is : in between 12-13.99% as per the option given in the MCQ during assessment 
@@ -77,7 +77,7 @@ git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vs
 - General timing characterization parameters 
 ### Chip Floorplaning :
 
- Topics covered in this part of day 2 of workshop are :
+ Topics covered in this part of day 2 of workshop were :
 - Definition of width and height of core and die .
 - Utilization factor and aspect ratio.
 - Concepts of pre placed cells 
@@ -86,7 +86,7 @@ git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vs
 - Pin placement and logical cell placement blockage 
 
 ### Placement :
-During this stage following are done as :
+During this stage following were done as :
 - Netlist binding with the initial place design using cell library that contains different flavours of a cell 
 - Optimization of placement using estimated wire length and capacitance since routing has not done yet 
 - After this step timing analysis is done with ideal clock since CTS has not done till this stage 
@@ -98,8 +98,8 @@ During this stage following are done as :
 - Outputs -CDL (Circuit Description Language), GDSII, LEF, extracted Spice netlist (.cir), timing, noise, power.libs, function.
 
 ### Timing definition 
-- Defintion of threshold voltage of a cell and its propagation delay is covered and some tasks related to rise time, fall time, threshold voltage calculation are also done .
-- Important parameters of timing characterization are as :
+- Defintion of threshold voltage of a cell and its propagation delay is covered and some tasks related to rise time, fall time, threshold voltage calculation were also done .
+- Important parameters of timing characterization were as :
 - Rise Delay: Time taken for waveform to rise from 20% to 80% of VDD.
 - Fall Delay: Time taken for waveform to fall from 80% to 20% of VDD.
 - Propagation Delay: Measured between 50% of Input transition to 50% of Output transition.
@@ -143,7 +143,7 @@ During this stage following are done as :
 - Box
 
 ![img7](https://user-images.githubusercontent.com/73484928/100149847-ce078880-2ec4-11eb-9bbb-0fe9984f8709.png)
-#### As we can see on image above, the area of the layout is '812062.19 microns.'
+#### As we could see on image above, the area of the layout was '812062.19 microns.'
 
 
 ## Day 3:
@@ -297,7 +297,7 @@ During this stage following are done as :
  ### Post Route Sta log
  ![pic33](https://user-images.githubusercontent.com/73484928/100149878-d364d300-2ec4-11eb-8236-be58437b3e67.PNG)
   
- ####  we can see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
+ ####  we could see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
   
  ## SPEF representation :
    
