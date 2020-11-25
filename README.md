@@ -302,7 +302,10 @@ During this stage following are done as :
  ## SPEF representation :
    
  ![timing def](https://user-images.githubusercontent.com/73484928/100149895-d5c72d00-2ec4-11eb-85e4-28e3dc801762.PNG)
-  
+ 
+ ## Acknowledgements:
+ - Kunal Ghosh, Co-founder (VSD Corp. Pvt. Ltd)
+ - Nickson P Jose, Teaching Assistant (VSD Corp. Pvt. Ltd)
    
    
    
