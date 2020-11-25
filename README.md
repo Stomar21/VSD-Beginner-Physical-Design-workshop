@@ -49,7 +49,7 @@ git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vs
 - qflow display spi_slave
 - after these two steps two windows gets open - one for "layout1" and one for "tkcon" 
 - to find the area of the layout, type "box" in the tkcon window.
-line for img 1
+![img1](https://user-images.githubusercontent.com/73484928/100149831-cba52e80-2ec4-11eb-8cf6-5977f0b7a4c1.png)
 #### As we can see In the image area is 1542024 micron.
 #### After this task, next lab task is to get introduced with 'picorv32' module in qlow .
 ### Commands used:
