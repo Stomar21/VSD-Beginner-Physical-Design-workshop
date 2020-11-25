@@ -202,8 +202,8 @@ During this stage following were done as :
     2. commands used to run transien analysis
     3. outwaveform
     4. timing defintion 
- 
- ![timing def](https://user-images.githubusercontent.com/73484928/100149895-d5c72d00-2ec4-11eb-85e4-28e3dc801762.PNG)
+    
+ ![timing def2](https://user-images.githubusercontent.com/73484928/100173554-c6f66f80-2ef0-11eb-9d9d-e322d471d35b.PNG)
  
  ![img13_a](https://user-images.githubusercontent.com/73484928/100149863-d069e280-2ec4-11eb-887a-2e1d600d7c03.png)
  
