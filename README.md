@@ -121,6 +121,9 @@ During this stage following are done as :
 - Arrange Pins: Auto Group and apply
 - Arrange Pins: New Group and create my_pin_grouping for resetn and clk pins. Check only left box.
 
+### Placement settings in Qmanager 
+![placementsetting](https://user-images.githubusercontent.com/73484928/100171459-cc51bb00-2eec-11eb-930e-3c16bc2ad44d.png)
+
 #### After doing these settings, click on run to start placement which is shown as 
 ![img3](https://user-images.githubusercontent.com/73484928/100149835-cc3dc500-2ec4-11eb-8021-2bd47df6d7c4.png)
 ![img4](https://user-images.githubusercontent.com/73484928/100149838-ccd65b80-2ec4-11eb-9639-489e08cebd3f.png)
@@ -168,15 +171,18 @@ During this stage following are done as :
   - Source and Drain formation
   - Steps to form contacts and Interconnects(local)
   - Higher level metal formation
-   
-### commands used:
+  ### 16 mask CMOS fabrication
+  
+  ![fab](https://user-images.githubusercontent.com/73484928/100171431-ca87f780-2eec-11eb-8ae9-1f2c6ae78c2b.png)
+
+  ### commands used:
   - git clone https://github.com/kunalg123/ngspice_labs.git  # to clone ngspice_labs 
   - cd ngspice_labs
   - cat inv.spice
   
   ![img8](https://user-images.githubusercontent.com/73484928/100149850-cea01f00-2ec4-11eb-83f9-88f1f0c7aac7.png)
 
-### commands used for simulation of above spice netlist
+  ### commands used for simulation of above spice netlist
   - cd ngspice_labs
   - ngspice inv.spice
   - ngspice 1 ->
@@ -186,7 +192,7 @@ During this stage following are done as :
   
   ![img9](https://user-images.githubusercontent.com/73484928/100149852-cea01f00-2ec4-11eb-9c06-83efcc3dcce5.png)
   
-####  to make some modification in the spice netlist to observe changes in Vm of CMOS
+####  To make some modification in the spice netlist to observe changes in Vm of CMOS
   - leafpad inv.spice   # this will open up editor window 
   
   ![img11](https://user-images.githubusercontent.com/73484928/100149858-cf38b580-2ec4-11eb-84a0-ef33cb51a06b.png)
@@ -239,8 +245,13 @@ During this stage following are done as :
 ## Shielding to prevent Crosstalk
 ![cts4](https://user-images.githubusercontent.com/73484928/100149909-d790f080-2ec4-11eb-9318-a27d7ca8c13b.png)
 
-### Setup and Hold with real clock
 
+## Setup analysis with real clock
+![setup](https://user-images.githubusercontent.com/73484928/100171467-ccea5180-2eec-11eb-8af0-c83c9caaf544.PNG)
+
+## Hold analysis with real clock
+![hold](https://user-images.githubusercontent.com/73484928/100171452-cc51bb00-2eec-11eb-988a-a7c7f02c16d4.PNG)
+![placementsetting](https://user-images.githubusercontent.com/73484928/100171459-cc51bb00-2eec-11eb-930e-3c16bc2ad44d.png)
 
 ### Commands used for prelayout sta analysis with real clock :
   - /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib  # .lib path 
