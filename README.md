@@ -1,4 +1,4 @@
-# VSD-Beginner-Physical-Design-workshop
+# VSD-Beginner-Physical-Design-Workshop
 An Informative workshop on Beginner Physical Design using Open-source EDA tools organized by VSD(VLSI system Design) Corp. It provides an hands-on experience to understand ASIC implementation steps from RTL to GDSII using open source EDA tools and tsmc 180nm process design kit. The workshop was organized in a very lucrative fashion to give a complete understanding of  SoC design flow from device physics point of view to real time implementation. The course structure is designed with day by day content in a progressive way of understanding and learning .
 ## Contents :
 - Introduction to RISC-V architecture design specification
