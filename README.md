@@ -67,8 +67,8 @@ git clone https://github.com/kunalg123/vsdflow.git  this was done to clone the v
 - Click on the run button adjacent to preparation and synthesis 
 #### After successful run of the synthesis, we could see the log file by clicking on the okay button at synthesis stage.
 ![img2](https://user-images.githubusercontent.com/73484928/100149833-cba52e80-2ec4-11eb-9f69-c4def72394ee.png)
-#### During step task is to calculate the % ratio of DFF/logic cells
-#### And the answer is : in between 12-13.99% as per the option given in the MCQ during assessment 
+#### During step task was to calculate the % ratio of DFF/logic cells
+#### And the answer was : in between 12-13.99% as per the option given in the MCQ during assessment 
 
 ## Day 2:
 - Chip floor planning 
@@ -98,7 +98,7 @@ During this stage following were done as :
 - Outputs -CDL (Circuit Description Language), GDSII, LEF, extracted Spice netlist (.cir), timing, noise, power.libs, function.
 
 ### Timing definition 
-- Defintion of threshold voltage of a cell and its propagation delay is covered and some tasks related to rise time, fall time, threshold voltage calculation were also done .
+- Defintion of Threshold voltage of a cell and its propagation delay is covered and some tasks related to rise time, fall time, Threshold voltage calculation were also done .
 - Important parameters of timing characterization were as :
 - Rise Delay: Time taken for waveform to rise from 20% to 80% of VDD.
 - Fall Delay: Time taken for waveform to fall from 80% to 20% of VDD.
@@ -121,10 +121,10 @@ During this stage following were done as :
 - Arrange Pins: Auto Group and apply
 - Arrange Pins: New Group and create my_pin_grouping for resetn and clk pins. Check only left box.
 
-### Placement settings in Qmanager 
+### Placement Settings in Qmanager 
 ![placementsetting](https://user-images.githubusercontent.com/73484928/100171459-cc51bb00-2eec-11eb-930e-3c16bc2ad44d.png)
 
-#### After doing these settings, click on run to start placement which is shown as 
+#### After performing these settings, click on run to start placement which is shown as 
 ![img3](https://user-images.githubusercontent.com/73484928/100149835-cc3dc500-2ec4-11eb-8021-2bd47df6d7c4.png)
 ![img4](https://user-images.githubusercontent.com/73484928/100149838-ccd65b80-2ec4-11eb-9639-489e08cebd3f.png)
 ![img5](https://user-images.githubusercontent.com/73484928/100149841-ccd65b80-2ec4-11eb-8feb-3c5fe1acb518.png)
@@ -147,22 +147,22 @@ During this stage following were done as :
 
 
 ## Day 3:
-- Spice deck creation for CMOS Inverter and  Simulation using ngspice and magic tool
+- Spice deck Creation for CMOS Inverter and  Simulation using ngspice and magic tool
 - Euler’s Path and stick diagram for layout 
-- 16 mask process for CMOS fabrication
+- 16 mask process for CMOS Fabrication
 
 ### simulation using ngspice 
-   - Spice netlist modeling for CMOS inverter
+   - Spice netlist modeling for CMOS Inverter
    - Static behaviour of CMOS and its robustness
-   - dynamic behavious and timin definition 
-     1. switching threshold voltage of inverter
-     2.prapagation delay( defintion of rise and fall time )
+   - Dynamic behaviour and timing definition 
+     1.Switching threshold voltage of inverter
+     2.Propagation delay( defintion of rise time and fall time )
     
-### Euler's Path and stick diagram for layout 
-   - Importance of Euler's path in making layout with respect to routing and resources
+### Euler's Path and Stick diagram for Layout 
+   - Importance of Euler's path in making layout with respect to routing resources
    - Relation between circuit design and its layout using stick diagram
    
-### 16 mask process for CMOS fabrication
+### 16 Mask Process for CMOS Fabrication
   - Selecting a substrate.
   - Creating active region for transistors
   - N-Well and P-Well formation
@@ -171,7 +171,7 @@ During this stage following were done as :
   - Source and Drain formation
   - Steps to form contacts and Interconnects(local)
   - Higher level metal formation
-  ### 16 mask CMOS fabrication
+  ### 16 mask CMOS Fabrication
   
   ![fab](https://user-images.githubusercontent.com/73484928/100171431-ca87f780-2eec-11eb-8ae9-1f2c6ae78c2b.png)
 
@@ -209,7 +209,7 @@ During this stage following were done as :
  
  ![img13](https://user-images.githubusercontent.com/73484928/100149861-d069e280-2ec4-11eb-9490-2908ea389cc6.PNG)
 
-###  Post layout analysis
+###  Post Layout Analysis
    - cd ngspice_labs
    - magic -T min2.tech  # to open magic layout window and tkcon window
    - source draw_fn.tcl  #  layout using tcl script
@@ -226,7 +226,7 @@ During this stage following were done as :
  - Clock tree synthesis
  - Concept of setup and hold time with real clock
  
-### Delay Table with different drive strength 
+### Delay Table of a cell with Different Drive strength 
 ![delay table](https://user-images.githubusercontent.com/73484928/100149824-c9db6b00-2ec4-11eb-8de1-c949595ecb97.png)
 
 ### CTS 
@@ -253,7 +253,7 @@ During this stage following were done as :
 ![hold](https://user-images.githubusercontent.com/73484928/100171452-cc51bb00-2eec-11eb-988a-a7c7f02c16d4.PNG)
 ![placementsetting](https://user-images.githubusercontent.com/73484928/100171459-cc51bb00-2eec-11eb-930e-3c16bc2ad44d.png)
 
-### Commands used for prelayout sta analysis with real clock :
+### Commands used for Prelayout Sta analysis with real clock :
   - /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib  # .lib path 
   - cd vsdflow/my_picorv32
   - leafpad picorv32.sdc      # to open .sdc file in editor for clock definition
@@ -268,7 +268,7 @@ During this stage following were done as :
 
 ![img17](https://user-images.githubusercontent.com/73484928/100149871-d233a600-2ec4-11eb-9aba-56ac03aed93b.png)
   
-  ## slack at prelayout stage is -0.5516
+  ## Slack at Prelayout stage is -0.5516
   
   
  ## Day 5:
@@ -299,13 +299,14 @@ During this stage following were done as :
   
  ####  we could see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
   
- ## SPEF representation :
+ ## SPEF Representation :
    
  ![timing def](https://user-images.githubusercontent.com/73484928/100149895-d5c72d00-2ec4-11eb-85e4-28e3dc801762.PNG)
  
  ## Acknowledgements:
  - Kunal Ghosh, Co-founder (VSD Corp. Pvt. Ltd)
  - Nickson P Jose, Teaching Assistant (VSD Corp. Pvt. Ltd)
+ 
    
    
    
