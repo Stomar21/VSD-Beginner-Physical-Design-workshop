@@ -37,7 +37,7 @@ The learning platform is divided in two sections - 1. Learners corners, which gi
 
 ### 
 git clone https://github.com/kunalg123/vsdflow.git  this was done to clone the vsdflow repo from github, vsdflow contains all the required dirctories for the design flow
-### Commands used to use this vsdflow repo are as:
+### Commands used to implement this vsdflow repo are as:
 - cd vsdflow
 - ./vsdflow spi_slave_design_details.csv
 - ls -ltr outdir_spi_slave/
@@ -50,7 +50,7 @@ git clone https://github.com/kunalg123/vsdflow.git  this was done to clone the v
 - after these two steps two windows gets open - one for "layout1" and one for "tkcon" 
 - to find the area of the layout, type "box" in the tkcon window.
 ![img1](https://user-images.githubusercontent.com/73484928/100149831-cba52e80-2ec4-11eb-8cf6-5977f0b7a4c1.png)
-#### As we can see In the image area is 1542024 micron.
+#### As we can see in the image area is 1542024 micron.
 #### After this task, next lab task is to get introduced with 'picorv32' module in qlow .
 ### Commands used:
 - cd vsdflow 
@@ -92,7 +92,7 @@ During this stage following were done as :
 - After this step timing analysis is done with ideal clock since CTS has not done till this stage 
 
 ### Cell Design :
-- It consists of three parts 
+  It consists of three parts 
 - Inputs - PDKs (Process design kits), DRC & LVS rules, SPICE models, library & user-defined specs.
 - Design Steps Design steps - Circuit Design, Layout Design, Characterization. 
 - Outputs -CDL (Circuit Description Language), GDSII, LEF, extracted Spice netlist (.cir), timing, noise, power.libs, function.
