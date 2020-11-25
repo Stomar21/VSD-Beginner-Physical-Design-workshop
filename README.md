@@ -257,7 +257,7 @@ During this stage following are done as :
 
 ![img17](https://user-images.githubusercontent.com/73484928/100149871-d233a600-2ec4-11eb-9aba-56ac03aed93b.png)
   
-  ## slack at prelaout stage is -0.5516
+  ## slack at prelayout stage is -0.5516
   
   
  ## Day 5:
