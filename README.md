@@ -66,7 +66,7 @@ git clone https://github.com/kunalg123/vsdflow.git  this is done to clone the vs
 - Click set stop button on the setting window in qlow manager
 - Click on the run button adjacent to preparation and synthesis 
 #### After successful run of the synthesis, we can see the log file by clicking on the okay button at synthesis stage.
-line for img 2 syn
+![img2](https://user-images.githubusercontent.com/73484928/100149833-cba52e80-2ec4-11eb-9f69-c4def72394ee.png)
 #### During step task is to calculate the % ratio of DFF/logic cells
 #### And the answer is : in between 12-13.99% as per the option given in the MCQ during assessment 
 
@@ -120,9 +120,12 @@ During this stage following are done as :
 - Placement settings: init. Density 0.7
 - Arrange Pins: Auto Group and apply
 - Arrange Pins: New Group and create my_pin_grouping for resetn and clk pins. Check only left box.
-line for placement setting img
+
 #### After doing these settings, click on run to start placement which is shown as 
-placement images
+![img3](https://user-images.githubusercontent.com/73484928/100149835-cc3dc500-2ec4-11eb-8021-2bd47df6d7c4.png)
+![img4](https://user-images.githubusercontent.com/73484928/100149838-ccd65b80-2ec4-11eb-9639-489e08cebd3f.png)
+![img5](https://user-images.githubusercontent.com/73484928/100149841-ccd65b80-2ec4-11eb-8feb-3c5fe1acb518.png)
+![img6](https://user-images.githubusercontent.com/73484928/100149844-cd6ef200-2ec4-11eb-8623-5c8bcf17734e.png)
 #### Now to check the layout area of the above design following commands are used :
 - cd
 - cd vsdflow/my_picorv32
@@ -135,7 +138,7 @@ placement images
 - Press Shift+i
 #### This will select the whole layout Now in tkcon window, type below command
 - Box
-layout image after placement stage
+![img7](https://user-images.githubusercontent.com/73484928/100149847-ce078880-2ec4-11eb-9bbb-0fe9984f8709.png)
 #### As we can see on image above, the area of the layout is '812062.19 microns.'
 
 
@@ -169,7 +172,7 @@ layout image after placement stage
   - git clone https://github.com/kunalg123/ngspice_labs.git  # to clone ngspice_labs 
   - cd ngspice_labs
   - cat inv.spice
-  line for spice deck of Inverter
+  ![img8](https://user-images.githubusercontent.com/73484928/100149850-cea01f00-2ec4-11eb-83f9-88f1f0c7aac7.png)
 
 ### commands used for simulation of above spice netlist
   - cd ngspice_labs
@@ -178,24 +181,27 @@ layout image after placement stage
   - run
   - setplot dc1
   - plot out in
-  line for output waveform for Vm calculation
+  ![img9](https://user-images.githubusercontent.com/73484928/100149852-cea01f00-2ec4-11eb-9c06-83efcc3dcce5.png)
   
 ####  to make some modification in the spice netlist to observe changes in Vm of CMOS
   - leafpad inv.spice   # this will open up editor window 
-  line for next comparision waveform
+  ![img11](https://user-images.githubusercontent.com/73484928/100149858-cf38b580-2ec4-11eb-84a0-ef33cb51a06b.png)
  
  ### Pre layout transient analysis
     1. spice netlist
     2. commands used to run transien analysis
     3. outwaveform
     4. timing defintion 
-    copy the timing diagram and then netlis and then output waveform transient netlist here 13a and 13
-
+ ![timing def](https://user-images.githubusercontent.com/73484928/100149895-d5c72d00-2ec4-11eb-85e4-28e3dc801762.PNG)
+ ![img13_a](https://user-images.githubusercontent.com/73484928/100149863-d069e280-2ec4-11eb-887a-2e1d600d7c03.png)
+ ![img13](https://user-images.githubusercontent.com/73484928/100149861-d069e280-2ec4-11eb-9490-2908ea389cc6.PNG)
 ###  Post layout analysis
    - cd ngspice_labs
    - magic -T min2.tech  # to open magic layout window and tkcon window
    - source draw_fn.tcl  #  layout using tcl script
-   img 14 15 and 16
+ ![img14](https://user-images.githubusercontent.com/73484928/100149865-d1027900-2ec4-11eb-9c91-d039e5d8f048.png)
+ ![img15](https://user-images.githubusercontent.com/73484928/100149866-d19b0f80-2ec4-11eb-8e71-839470898097.png)
+ ![img16](https://user-images.githubusercontent.com/73484928/100149869-d19b0f80-2ec4-11eb-92f5-ee10a3617946.PNG)
    
    
 ## Day 4:   
@@ -204,13 +210,19 @@ layout image after placement stage
  - Concept of setup and hold time with real clock
  
 ### Delay Table with different drive strength 
-  delay table line
-
+  ![delay table](https://user-images.githubusercontent.com/73484928/100149824-c9db6b00-2ec4-11eb-8de1-c949595ecb97.png)
 ### CTS 
-images of cts cts 1234 crosstalk
-
+![cts1](https://user-images.githubusercontent.com/73484928/100149900-d65fc380-2ec4-11eb-8a2c-42874ec83131.png)
+![cts2](https://user-images.githubusercontent.com/73484928/100149902-d65fc380-2ec4-11eb-997b-0923c1945324.png)
+## H tree CTS
+![cts3](https://user-images.githubusercontent.com/73484928/100149904-d6f85a00-2ec4-11eb-801b-cfc6d39ca37a.png)
+## CTS with Buffer
+![crosstalk](https://user-images.githubusercontent.com/73484928/100149897-d5c72d00-2ec4-11eb-9093-3a716e54b893.png)
+## CTS with Crosstalk
+![cts4](https://user-images.githubusercontent.com/73484928/100149909-d790f080-2ec4-11eb-9318-a27d7ca8c13b.png)
+## Shielding to prevent Crosstalk
 ### Setup and Hold with real clock
-images of setup and hold
+
 
 ### Commands used for prelayout sta analysis with real clock :
   - /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib  # .lib path 
@@ -224,8 +236,8 @@ images of setup and hold
   - read_sdc picorv32.sdc
   - report_checks
   - sta prelayout_sta.conf
-  line for image 17 
-  slack at prelaout stage is -0.5516
+![img17](https://user-images.githubusercontent.com/73484928/100149871-d233a600-2ec4-11eb-9aba-56ac03aed93b.png)
+  ## slack at prelaout stage is -0.5516
   
   
  ## Day 5:
@@ -233,22 +245,22 @@ images of setup and hold
   - DRC     - Rules related to metal width, metal spacing, pitch, via sizing, via spacing 
   - Parasitic Extraction - Representation of R and C parasitics in form of SPEF file.
   - Pre and Post routing STA analysis
-
-### Routing in Progress
-  img route 1
-### Routing Completion Report
-  img routing report
- ##  Sucessful Routing
-  img route 2 
-  image 3
-  ## Pre Route Sta log
-  img32
-  ## Post Route Sta log
-  img 33
- ####  we can see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
+  ![maze](https://user-images.githubusercontent.com/73484928/100149873-d233a600-2ec4-11eb-944b-4cf3b72f19c6.png)
+   ### MAZE Routing 
+   ![rout1](https://user-images.githubusercontent.com/73484928/100149881-d364d300-2ec4-11eb-8040-9a0515a25f72.png)
+   ### Routing in Progress
+  ![routing result](https://user-images.githubusercontent.com/73484928/100149890-d4960000-2ec4-11eb-84f0-0ce3bf711486.png)
+   ### Routing Completion Report
+   ![rout2](https://user-images.githubusercontent.com/73484928/100149885-d3fd6980-2ec4-11eb-838a-9248c12e6572.png)
+   ###  Sucessful Routing
+   ![pic32](https://user-images.githubusercontent.com/73484928/100149876-d2cc3c80-2ec4-11eb-8032-675b7cff90e5.PNG)
+   ### Pre Route Sta log
+   ![pic33](https://user-images.githubusercontent.com/73484928/100149878-d364d300-2ec4-11eb-8236-be58437b3e67.PNG)
+   ### Post Route Sta log
+   ####  we can see the reduction in maximum clock frequency of 20Mhz after post Routing( because of the RC parasitics) .
   
   ## SPEF representation :
-   spef img.
+   ![timing def](https://user-images.githubusercontent.com/73484928/100149895-d5c72d00-2ec4-11eb-85e4-28e3dc801762.PNG)
   
    
    
